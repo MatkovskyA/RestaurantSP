@@ -9,7 +9,7 @@ body {
   font-family: "CirceBold";
 }
 
-h4::after, .h4::after {
+h4.line::after, .line.h4::after {
   content: url(../resourses/line.svg);
   position: absolute;
   top: -5px;
