@@ -126,11 +126,26 @@ main {
             position: relative;
             img {
                 margin-bottom: 25px;
+                z-index: 5;
+                position: relative;
             }
-
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            .food {
+                position: relative;
+            }
+            .drinks {
+                position: relative;
+            }
+            .drinks .food::before {
+                content: url(../resourses/border.svg);
+                position: absolute;
+                right: -40px;
+                top: -40px;
+                z-index: 4;
         }
-
-
     }
 }
 

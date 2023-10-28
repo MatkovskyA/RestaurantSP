@@ -121,6 +121,32 @@ main .menu .food__drinks {
 }
 main .menu .food__drinks img {
   margin-bottom: 25px;
+  z-index: 5;
+  position: relative;
+}
+main .menu .food__drinks a {
+  text-decoration: none;
+  color: black;
+}
+main .menu .food__drinks .food {
+  position: relative;
+}
+main .menu .food__drinks .drinks {
+  position: relative;
+}
+main .menu .food__drinks .food::before {
+  content: url(../resourses/border.svg);
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  z-index: 4;
+}
+main .menu .food__drinks .drinks::before {
+  content: url(../resourses/border.svg);
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  z-index: 4;
 }
 
 /*!
