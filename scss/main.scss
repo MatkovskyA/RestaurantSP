@@ -9,12 +9,17 @@ body {
     font-family: "CirceBold";
     
 }
-
 h4.line::after {
     content: url(../resourses/line.svg);
     position: absolute;
     top: -5px;
     left: 150%;
+}
+.line2::after {
+    content: url(../resourses/line.svg);
+    position: absolute;
+    bottom: 7px;
+    left: 20vh;
 }
 section {
     margin-bottom: 150px;
@@ -23,9 +28,7 @@ section {
     margin-bottom: 80px;
     position: relative;
     display: inline-block;
-
 }
-
 .content {
     display: flex;
     gap: 135px;
@@ -112,7 +115,7 @@ main {
     }
     //section about__restaurant
     .about__restaurant {
-
+        //пусто
     }
     //section menu
     .menu {
@@ -139,12 +142,43 @@ main {
             .drinks {
                 position: relative;
             }
-            .drinks .food::before {
+            .drinks::before {
                 content: url(../resourses/border.svg);
                 position: absolute;
                 right: -40px;
                 top: -40px;
                 z-index: 4;
+            }
+            .food::before {
+                content: url(../resourses/border.svg);
+                position: absolute;
+                right: -40px;
+                top: -40px;
+                z-index: 4;
+            }
+        }
+    }
+    //section delivery
+    .delivery {
+        p {
+            margin-bottom: 60px;
+        }
+        a {
+            text-decoration: none;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            padding: 15px 30px;
+        }
+        .bcground {
+            color: white;
+            background-color: #B59571;
+            margin-right: 30px;
+        }
+        .bcground2 {
+            color: black;
+            border: 1px solid rgba(51, 51, 51, 0.20);
         }
     }
 }
