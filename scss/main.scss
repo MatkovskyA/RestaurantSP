@@ -48,7 +48,10 @@ line-height: 140%;
 max-width: 525px;
 }
 header {
-    .nav__link {
+    .container {
+        position: relative;
+    }
+    nav {
         position: absolute;
         z-index: 10;
         display: flex;
@@ -105,7 +108,7 @@ main {
         }
         h1 {
             color: white;
-            min-width: 855px;
+            max-width: 895px;
             font-size: 54px;
             font-style: normal;
             font-weight: 700;
