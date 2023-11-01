@@ -5,6 +5,10 @@
     font-weight: 700;
 }
 
+// Данные стили написаны для основной страницы
+a {
+    cursor: pointer;
+}
 body {
     font-family: "CirceBold";
     
@@ -84,7 +88,7 @@ main {
             position: absolute;
             z-index: 2;
             .left__bar_logo {
-                margin: 30px 20px;
+                margin: 30px 20px 675px 20px;
             }
         }
         .soc__icons {
@@ -92,7 +96,10 @@ main {
             flex-direction: column;
             align-items: center;
             gap: 20px;
-            margin-top: 770px;
+            a img {
+                width: 40px;
+                height: 40px;
+            }
         }
         .bg__image img {
             position: absolute;
@@ -117,9 +124,7 @@ main {
         }
     }
     //section about__restaurant
-    .about__restaurant {
-        //пусто
-    }
+
     //section menu
     .menu {
         .content {
@@ -184,6 +189,142 @@ main {
             border: 1px solid rgba(51, 51, 51, 0.20);
         }
     }
+    //section contacts
+    .contacts {
+        .col-lg-5 {
+            padding-top: 70px;
+        }
+        .contacts__inner {
+            display: flex;
+            .time__block {
+                
+            }
+        }
+        
+        .bl {
+            margin: 15px;
+            padding: 50px 10px;
+        }
+        
+        .number {
+            font-size: 2em;
+            padding: 0 0 25px;
+            font-weight: bold;
+            opacity: 0;
+        }
+        
+        .viz {
+            opacity: 1;
+            transition: 1s;
+        }
+        
+        .clearfix:before,
+        .clearfix:after {
+            content: " ";
+            /* 1 */
+            display: table;
+            /* 2 */
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+
+    }
 }
 
-@import "bootstrap/bootstrap.scss"
+footer {
+    background-color: #333;
+    height: 120px;
+    width: 100%;
+
+    .footer__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 35px 0;
+        a {
+            text-decoration: none;
+            line-height: 23px;
+            font-size: 16px;
+            color: white;
+        }
+    }
+}
+
+// данные стили написаны для страницы Delivery
+
+header {
+    .color-a {
+        color: black;
+    }
+
+    .nav__delivery {
+        position: static;
+        display: block;
+        float: right;
+        a {
+            margin-right: 30px;
+        }
+    }
+}
+main {
+    //section present
+    .present__delivery {
+        height: 0;
+        margin-bottom: 0;
+    }
+
+    .left__bar_position {
+        top: 0;
+    }
+
+    //section dishes
+    .dishes {
+        .content__delivery {
+            display: block;
+            margin-left: 0;
+            padding-top: 115px;
+            margin-bottom: 60px;
+        }
+        .row {
+            gap: 30px;
+        }
+        .dish__block {
+            border: 1px solid gray;
+            padding: 0;
+            max-width: 300px;
+            img {
+                width: 100%;
+            }
+            .price {
+                font-size: 32px;
+            }
+        }
+        .dishes__dish {
+            margin-bottom: 20px;
+        }
+        .dish__items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .text__center {
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+        .btn__color {
+            padding: 10px 20px;
+            background-color: #B59571;
+            color: white;
+            border: none
+        }
+    }
+}
+
+
+
+@import "bootstrap/bootstrap.scss";
