@@ -51,6 +51,83 @@ font-weight: 400;
 line-height: 140%;
 max-width: 525px;
 }
+//модальное окно резерва стола
+.hidden {
+    display: none;
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    .close__popup {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+.modal__window {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.card.bgcolor {
+    background-color: #333333;
+    color: white;
+
+}
+.bgcolor {
+    background-color: #333333;
+    color: white;
+}
+.card-header {
+    display: block;
+    text-align: center;
+
+    .logo__popup {
+        margin: 60px 170px 40px 170px;
+    }
+}
+.card-body {
+    .inputWeight {
+        width: 300px;
+    }
+}
+form {
+    display: grid;
+    
+    input {
+        justify-self: center;
+        margin-bottom: 30px;
+        padding: 15px 0 15px 20px;
+        border: 1px solid white;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        input {
+            width: 135px;
+        }   
+    }
+    button {
+        width: 150px;
+        padding: 10px;
+        justify-self: center;
+        background-color: #B59571;
+        color: white;
+        border: none;
+        margin-bottom: 50px;
+    }
+}
+}
+
+
+
+
 header {
     .container {
         position: relative;
@@ -286,14 +363,20 @@ main {
             margin-left: 0;
             padding-top: 115px;
             margin-bottom: 60px;
+            margin-left: 80px;
+        }
+        .list-group-item {
+            border: none;
+            font-size: 14px;
         }
         .row {
             gap: 30px;
+            margin-left: 100px;
         }
         .dish__block {
             border: 1px solid gray;
             padding: 0;
-            max-width: 300px;
+            max-width: 250px;
             img {
                 width: 100%;
             }
@@ -314,7 +397,7 @@ main {
         .text__center {
             text-align: center;
             margin-bottom: 30px;
-            
+            font-size: 18px;
         }
         .btn__color {
             padding: 10px 20px;

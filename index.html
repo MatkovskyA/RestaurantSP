@@ -17,10 +17,54 @@
                 <a href="">Меню</a>
                 <a href="delivery.html">Доставка</a>
                 <a href="">Оплата</a>
-                <a href="" class="reserved">Бронь столика</a>
+                <button class="reserved open__popup" data-modal-button="modal-reserved">Бронь
+                    столика</button>
             </nav>
         </div>
     </header>
+    <!-- Modal -->
+    <div class="hidden" data-modal id="modal__reerved">
+        <div class="modal__window">
+            <div class="card bgcolor">
+                <div class="card-header">
+                    <img src="resourses/close-popap.svg" alt="icon" class="close__popup">
+                    <img src="resourses/logo.svg" alt="icon" class="logo__popup">
+                    <h5>ЗАБРОНИРОВАТЬ СТОЛИК</h5>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <input type="text" placeholder="Имя" class="inputWeight bgcolor">
+                        <input type="number" placeholder="Телефон" class="inputWeight bgcolor">
+                        <div>
+                            <input type="text" placeholder="Гостей" class="bgcolor">
+                            <input type="text" placeholder="Время" class="bgcolor">
+                        </div>
+                        <button type="submit">Забронировать</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="modal fade" id="reserved__modal" tabindex="-1" aria-labelledby="reserved__modal_label"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="resourses/logo.svg" alt="">
+                    <h5 class="modal-title" id="reserved__modal_label">Забронировать столик</h5>
+                    <button class="btn-close" data-dismiss="modal" aria-label="close"></button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Modal -->
     <main>
         <section class="present">
             <div class="left__bar">
@@ -36,25 +80,6 @@
             <div class="bg__image">
                 <img src="resourses/restaurant.jpeg" alt="">
             </div>
-            <!-- <div class="modal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Modal body text goes here.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="bg__image_title">
                 <div class="container">
                     <h1 class="desc">Видовой ресторан Food Exxe Relo<br>

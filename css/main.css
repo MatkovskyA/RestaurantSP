@@ -58,6 +58,73 @@ section {
   max-width: 525px;
 }
 
+.hidden {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hidden .close__popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.hidden .modal__window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden .card.bgcolor {
+  background-color: #333333;
+  color: white;
+}
+.hidden .bgcolor {
+  background-color: #333333;
+  color: white;
+}
+.hidden .card-header {
+  display: block;
+  text-align: center;
+}
+.hidden .card-header .logo__popup {
+  margin: 60px 170px 40px 170px;
+}
+.hidden .card-body .inputWeight {
+  width: 300px;
+}
+.hidden form {
+  display: grid;
+}
+.hidden form input {
+  justify-self: center;
+  margin-bottom: 30px;
+  padding: 15px 0 15px 20px;
+  border: 1px solid white;
+}
+.hidden form div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.hidden form div input {
+  width: 135px;
+}
+.hidden form button {
+  width: 150px;
+  padding: 10px;
+  justify-self: center;
+  background-color: #B59571;
+  color: white;
+  border: none;
+  margin-bottom: 50px;
+}
+
 header .container {
   position: relative;
 }
@@ -258,14 +325,20 @@ main .dishes .content__delivery {
   margin-left: 0;
   padding-top: 115px;
   margin-bottom: 60px;
+  margin-left: 80px;
+}
+main .dishes .list-group-item {
+  border: none;
+  font-size: 14px;
 }
 main .dishes .row {
   gap: 30px;
+  margin-left: 100px;
 }
 main .dishes .dish__block {
   border: 1px solid gray;
   padding: 0;
-  max-width: 300px;
+  max-width: 250px;
 }
 main .dishes .dish__block img {
   width: 100%;
@@ -286,6 +359,7 @@ main .dishes .dish__items {
 main .dishes .text__center {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 main .dishes .btn__color {
   padding: 10px 20px;
