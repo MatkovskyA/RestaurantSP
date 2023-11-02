@@ -32,10 +32,11 @@ $('#counter').each(function() {
 
 //popap
 //ОТкрытие popup
-$('.open__popup').click(function(e){
-    e.preventDefault();
+$('.open__popup').click(function(){
     $('.hidden').fadeIn(600);
+    $('html').addClass('no__scroll')
 });
 $('.close__popup').click(function(){
     $('.hidden').fadeOut(600);
+    $('html').removeClass('no__scroll')
 });

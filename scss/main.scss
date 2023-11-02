@@ -51,6 +51,9 @@ font-weight: 400;
 line-height: 140%;
 max-width: 525px;
 }
+.no__scroll {
+    overflow: hidden;
+}
 //модальное окно резерва стола
 .hidden {
     display: none;
@@ -113,7 +116,7 @@ form {
             width: 135px;
         }   
     }
-    button {
+    input[type=submit] {
         width: 150px;
         padding: 10px;
         justify-self: center;

@@ -58,6 +58,10 @@ section {
   max-width: 525px;
 }
 
+.no__scroll {
+  overflow: hidden;
+}
+
 .hidden {
   display: none;
   position: absolute;
@@ -115,7 +119,7 @@ section {
 .hidden form div input {
   width: 135px;
 }
-.hidden form button {
+.hidden form input[type=submit] {
   width: 150px;
   padding: 10px;
   justify-self: center;
