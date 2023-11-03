@@ -36,6 +36,7 @@ $('.open__popup').click(function(){
     $('.hidden').fadeIn(600);
     $('html').addClass('no__scroll')
 });
+//Закрытие попап
 $('.close__popup').click(function(){
     $('.hidden').fadeOut(600);
     $('html').removeClass('no__scroll')
