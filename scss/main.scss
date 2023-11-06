@@ -23,7 +23,7 @@ h4.line::after {
     content: url(../resourses/line.svg);
     position: absolute;
     bottom: 7px;
-    left: 20vh;
+    left: 27vh;
 }
 section {
     margin-bottom: 150px;
@@ -56,9 +56,13 @@ max-width: 525px;
 }
 .decor__a {
     text-decoration: none;
-    line-height: 22px;
-    font-size: 34px;
+    font-size: 24px;
     color: white;
+    padding: 20px 40px;
+    background-color: #B59571;
+}
+.hidden2 {
+    opacity: 0;
 }
 //модальное окно резерва стола
 .hidden {
@@ -159,6 +163,13 @@ header {
     padding: 10px 20px;
     background-color: #B59571;
 }
+// .present.left__bar.open {
+//             // .left__bar.open {
+//         //     width: 100%;
+            
+//         // }
+// }
+
 main {
     //section present
     .present {
@@ -188,20 +199,42 @@ main {
                         font-size: 48px;
                         margin-bottom: 60px;
                     }
+                    a:nth-child(4) {
+                        text-decoration: none;
+                        font-size: 24px;
+                        color: white;
+                        padding: 20px 40px;
+                        background-color: #B59571;
+            }
                 }
             }
         }
-        .left__bar.open {
+        .open {
             width: 100%;
-            
         }
+        .left__bar.open {
+            .left__bar_burger span:nth-child(2){
+                opacity: 0;
+            }
+            .left__bar_burger span:nth-child(1){
+                transform: translateY(0) rotate(45deg);
+                width: 30px;
+            }
+            .left__bar_burger span:nth-child(3){
+                transform: translateY(0) rotate(-45deg);
+            }
+            .lb__burger_mb{
+                margin-bottom: 150px;
+            }
+        }
+        
         .left__bar_burger {
             position: relative;
             width: 40px;
             height: 40px;
             border: none;
             background-color: #333333;
-            margin: 30px 20px 150px 20px;
+            margin: 30px 20px 0 20px;
             
             span {
                 border-radius: 5px;
@@ -210,6 +243,7 @@ main {
                 height: 4px;
                 background-color: #B59571;
                 left: 3px;
+                transition: transform .5s, opacity .5s, background-color .5s;
             }
         }
         .left__bar_burger span:nth-child(1){
@@ -229,6 +263,9 @@ main {
                 width: 40px;
                 height: 40px;
             }
+        }
+        .soc__icons_row {
+            flex-direction: row;
         }
         .bg__image img {
             position: absolute;

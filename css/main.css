@@ -24,7 +24,7 @@ h4.line::after, .line.h4::after {
   content: url(../resourses/line.svg);
   position: absolute;
   bottom: 7px;
-  left: 20vh;
+  left: 27vh;
 }
 
 section {
@@ -64,9 +64,14 @@ section {
 
 .decor__a {
   text-decoration: none;
-  line-height: 22px;
-  font-size: 34px;
+  font-size: 24px;
   color: white;
+  padding: 20px 40px;
+  background-color: #B59571;
+}
+
+.hidden2 {
+  opacity: 0;
 }
 
 .hidden {
@@ -192,8 +197,28 @@ main .present .left__bar .left__bar_logo .nav__burger a {
   font-size: 48px;
   margin-bottom: 60px;
 }
-main .present .left__bar.open {
+main .present .left__bar .left__bar_logo .nav__burger a:nth-child(4) {
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+  padding: 20px 40px;
+  background-color: #B59571;
+}
+main .present .open {
   width: 100%;
+}
+main .present .left__bar.open .left__bar_burger span:nth-child(2) {
+  opacity: 0;
+}
+main .present .left__bar.open .left__bar_burger span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  width: 30px;
+}
+main .present .left__bar.open .left__bar_burger span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+main .present .left__bar.open .lb__burger_mb {
+  margin-bottom: 150px;
 }
 main .present .left__bar_burger {
   position: relative;
@@ -201,7 +226,7 @@ main .present .left__bar_burger {
   height: 40px;
   border: none;
   background-color: #333333;
-  margin: 30px 20px 150px 20px;
+  margin: 30px 20px 0 20px;
 }
 main .present .left__bar_burger span {
   border-radius: 5px;
@@ -210,6 +235,7 @@ main .present .left__bar_burger span {
   height: 4px;
   background-color: #B59571;
   left: 3px;
+  transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
 main .present .left__bar_burger span:nth-child(1) {
   transform: translateY(-10px);
@@ -228,6 +254,9 @@ main .present .soc__icons {
 main .present .soc__icons a img {
   width: 40px;
   height: 40px;
+}
+main .present .soc__icons_row {
+  flex-direction: row;
 }
 main .present .bg__image img {
   position: absolute;
