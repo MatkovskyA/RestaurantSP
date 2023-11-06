@@ -60,3 +60,4 @@ burgerBtn.addEventListener('click', function () {
     burgerBtn.classList.toggle('lb__burger_mb')
 
 })
+

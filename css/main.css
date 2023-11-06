@@ -344,19 +344,19 @@ main .dish {
   position: static;
   z-index: 4;
 }
-main .contacts .col-lg-5 {
-  padding-top: 70px;
+main .contacts .time__route {
+  max-width: 35%;
 }
 main .contacts .contacts__inner {
   display: flex;
+  gap: 135px;
 }
 main .contacts .bl {
   margin: 15px;
   padding: 50px 10px;
 }
 main .contacts .number {
-  font-size: 2em;
-  padding: 0 0 25px;
+  font-size: 16px;
   font-weight: bold;
   opacity: 0;
 }
@@ -373,6 +373,28 @@ main .contacts .clearfix:after {
 }
 main .contacts .clearfix:after {
   clear: both;
+}
+main .contacts .map {
+  position: relative;
+  width: 250px;
+  max-width: 745px;
+  max-height: 450px;
+  filter: grayscale(1);
+}
+main .contacts .contacts__info {
+  position: absolute;
+  top: 30px;
+  left: -110px;
+  width: 416px;
+  height: 349px;
+  padding: 40px;
+  color: white;
+  background-color: #5B5B5B;
+}
+main .contacts .contacts__info a {
+  display: inline-block;
+  color: white;
+  margin: 10px;
 }
 
 footer {

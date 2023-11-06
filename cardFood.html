@@ -20,15 +20,29 @@
         </div>
     </header>
     <main>
-        <section class="present present__delivery">
-            <div class="left__bar left__bar_position">
+        <section class="present present__position">
+            <div class="left__bar" id="left-bar">
+                <!--class open-->
                 <div class="left__bar_logo">
                     <a href="index.html"><img src="resourses/logo.svg" alt=""></a>
-                </div>
-                <div class="soc__icons">
-                    <a href=""><img src="resourses/youtube.svg" alt=""></a>
-                    <a href=""><img src="resourses/vk.svg" alt=""></a>
-                    <a href=""><img src="resourses/tg.svg" alt=""></a>
+                    <button class="left__bar_burger" id="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="nav__burger hidden2" id="burger-nav">
+                        <a href="">Меню</a>
+                        <a href="delivery.html">Доставка</a>
+                        <a href="">Оплата</a>
+                        <a class="open__popup decor__a">Бронь
+                            столика</a>
+                    </div>
+
+                    <div class="soc__icons" id="social-icons">
+                        <a href=""><img src="resourses/youtube.svg" alt=""></a>
+                        <a href=""><img src="resourses/vk.svg" alt=""></a>
+                        <a href=""><img src="resourses/tg.svg" alt=""></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -51,6 +65,54 @@
                         <li class="list-group-item" data-tab="tab-13">Гарниры</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="title">
+                    <h4 class="line">
+                        КОНТАКТЫ
+                    </h4>
+                </div>
+                <div class="contacts__inner">
+
+                    <div class="time__route" id="counter">
+                        <div class="bl">
+                            <div data-num="2" class="number">0</div>
+                            <div class="text">минуты из центра Санкт-Петербурга</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="12" class="number">0</div>
+                            <div class="text">минут из города Зеленогорск</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="42" class="number">0</div>
+                            <div class="text">минуты из аэропорта Пулково</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="52" class="number">0</div>
+                            <div class="text">минуты из города Павловск</div>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <div class="contacts__info">
+                            <p>Санкт-Петербург, Северная дорога, 11</p>
+                            <a href="tel:+79217777777">+7 (921) 777-77-77</a>
+                            <h4>Время работы</h4>
+                            <p>Вск-Чт с 12:00 до 23:00</p>
+                            <p>Пт-Сб с 12:00 до 03:00</p>
+                            <a class="reserved open__popup">Бронь
+                                столика</a>
+                            <a href="#">Задать вопрос</a>
+                        </div>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d35783f27ef1f4c04210ca7b2781e993f1b14dce13b65f4282a6e74a5ed690f&amp;source=constructor"
+                            width="745" height="400" frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -68,6 +130,11 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

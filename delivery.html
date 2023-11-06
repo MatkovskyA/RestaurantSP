@@ -19,6 +19,30 @@
             </nav>
         </div>
     </header>
+    <!-- Modal -->
+    <div class="hidden" data-modal id="modal__reerved">
+        <div class="modal__window">
+            <div class="card bgcolor">
+                <div class="card-header">
+                    <img src="resourses/close-popap.svg" alt="icon" class="close__popup">
+                    <img src="resourses/logo.svg" alt="icon" class="logo__popup">
+                    <h5>ЗАБРОНИРОВАТЬ СТОЛИК</h5>
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <input type="text" name="popup-form" placeholder="Имя" class="inputWeight bgcolor">
+                        <input type="number" name="popup-form" placeholder="Телефон" class="inputWeight bgcolor">
+                        <div>
+                            <input type="text" name="popup-form" placeholder="Гостей" class="bgcolor">
+                            <input type="text" name="popup-form" placeholder="Время" class="bgcolor">
+                        </div>
+                        <input type="submit" value="Забронировать"></input>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <main>
         <section class="present present__position">
             <div class="left__bar" id="left-bar">
@@ -175,6 +199,53 @@
                             <div class="price">250 Р</div>
                             <button type="submit" class="btn__color">В корзину</button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <div class="title">
+                    <h4 class="line">
+                        КОНТАКТЫ
+                    </h4>
+                </div>
+                <div class="contacts__inner">
+
+                    <div class="time__route" id="counter">
+                        <div class="bl">
+                            <div data-num="2" class="number">0</div>
+                            <div class="text">минуты из центра Санкт-Петербурга</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="12" class="number">0</div>
+                            <div class="text">минут из города Зеленогорск</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="42" class="number">0</div>
+                            <div class="text">минуты из аэропорта Пулково</div>
+                        </div>
+                        <div class="bl">
+                            <div data-num="52" class="number">0</div>
+                            <div class="text">минуты из города Павловск</div>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <div class="contacts__info">
+                            <p>Санкт-Петербург, Северная дорога, 11</p>
+                            <a href="tel:+79217777777">+7 (921) 777-77-77</a>
+                            <h4>Время работы</h4>
+                            <p>Вск-Чт с 12:00 до 23:00</p>
+                            <p>Пт-Сб с 12:00 до 03:00</p>
+                            <a class="reserved open__popup">Бронь
+                                столика</a>
+                            <a href="#">Задать вопрос</a>
+                        </div>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d35783f27ef1f4c04210ca7b2781e993f1b14dce13b65f4282a6e74a5ed690f&amp;source=constructor"
+                            width="745" height="400" frameborder="0">
+                        </iframe>
                     </div>
                 </div>
             </div>

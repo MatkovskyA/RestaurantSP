@@ -161,12 +161,6 @@ header {
     padding: 10px 20px;
     background-color: #B59571;
 }
-// .present.left__bar.open {
-//             // .left__bar.open {
-//         //     width: 100%;
-            
-//         // }
-// }
 
 main {
     //section present
@@ -367,14 +361,13 @@ main {
     }
     //section contacts
     .contacts {
-        .col-lg-5 {
-            padding-top: 70px;
+        .time__route {
+            // position: relative;
+            max-width: 35%;
         }
         .contacts__inner {
             display: flex;
-            .time__block {
-                
-            }
+            gap: 135px;
         }
         
         .bl {
@@ -383,8 +376,8 @@ main {
         }
         
         .number {
-            font-size: 2em;
-            padding: 0 0 25px;
+            font-size: 16px;
+
             font-weight: bold;
             opacity: 0;
         }
@@ -406,6 +399,29 @@ main {
             clear: both;
         }
 
+        .map {
+            position: relative;
+            width: 250px;
+            max-width: 745px;
+            max-height: 450px;
+            filter: grayscale(1);
+        }
+        .contacts__info {
+            position: absolute;
+            top: 30px;
+            left: -110px;
+            width: 416px;
+            height: 349px;
+            padding: 40px;
+            color: white;
+            background-color: #5B5B5B;
+            a {
+                display: inline-block;
+                color: white;
+                margin: 10px;
+            }
+        }
+        
     }
 }
 
