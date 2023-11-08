@@ -344,45 +344,39 @@ main .dish {
   position: static;
   z-index: 4;
 }
-main .contacts .time__route {
-  max-width: 35%;
-}
 main .contacts .contacts__inner {
   display: flex;
-  gap: 135px;
+  gap: 120px;
+  justify-content: space-between;
 }
-main .contacts .bl {
-  margin: 15px;
-  padding: 50px 10px;
+main .contacts .time__route {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 50px;
+  padding-top: 15px;
 }
-main .contacts .number {
-  font-size: 16px;
-  font-weight: bold;
+main .contacts .time__block {
+  width: calc(50% - 10px);
+}
+main .contacts .initial__number {
+  font-size: 64px;
   opacity: 0;
 }
 main .contacts .viz {
   opacity: 1;
   transition: 1s;
 }
-main .contacts .clearfix:before,
-main .contacts .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-main .contacts .clearfix:after {
-  clear: both;
-}
 main .contacts .map {
   position: relative;
-  width: 250px;
   max-width: 745px;
   max-height: 450px;
   filter: grayscale(1);
 }
 main .contacts .contacts__info {
   position: absolute;
+  z-index: 5;
   top: 30px;
   left: -110px;
   width: 416px;

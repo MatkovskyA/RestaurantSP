@@ -361,53 +361,70 @@ main {
     }
     //section contacts
     .contacts {
-        .time__route {
-            // position: relative;
-            max-width: 35%;
-        }
         .contacts__inner {
             display: flex;
-            gap: 135px;
+            gap: 120px;
+            justify-content: space-between;
         }
-        
-        .bl {
-            margin: 15px;
-            padding: 50px 10px;
+        .time__route {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 50px;
+            padding-top: 15px;
         }
-        
-        .number {
-            font-size: 16px;
-
-            font-weight: bold;
+        .time__block {
+            width: calc(50% - 10px);
+        }
+        .initial__number {
+            font-size: 64px;
             opacity: 0;
         }
+
+        // .initial__number {
+        //     opacity: 0;
+        // }
+        // .time__route {
+        //     // position: relative;
+        //     max-width: 35%;
+        // }
+        // .bl {
+        //     margin: 16px;
+        //     padding: 30px 10px;
+        // }
+        
+        // .number {
+        //     font-size: 30px;
+        //     font-weight: bold;
+        //     opacity: 0;
+        // }
         
         .viz {
             opacity: 1;
             transition: 1s;
         }
         
-        .clearfix:before,
-        .clearfix:after {
-            content: " ";
-            /* 1 */
-            display: table;
-            /* 2 */
-        }
+        // .clearfix:before,
+        // .clearfix:after {
+        //     content: " ";
+        //     /* 1 */
+        //     display: table;
+        //     /* 2 */
+        // }
         
-        .clearfix:after {
-            clear: both;
-        }
+        // .clearfix:after {
+        //     clear: both;
+        // }
 
         .map {
             position: relative;
-            width: 250px;
             max-width: 745px;
             max-height: 450px;
             filter: grayscale(1);
         }
         .contacts__info {
             position: absolute;
+            z-index: 5;
             top: 30px;
             left: -110px;
             width: 416px;

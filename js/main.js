@@ -1,16 +1,18 @@
+// отсчет времени в пути до ресторана в блоке контакты
+
 let time = 2;
 let cc = 1;
 
 $(window).scroll(function() {
 $('#counter').each(function() {
-    var
+    let
     cPos = $(this).offset().top,
     topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 200) {
+    if (cPos < topWindow + 400) {
     if (cc < 2) {
-        $(".number").addClass("viz");
+        $(".initial__number").addClass("viz");
         $('div').each(function() {
-        var
+        let
             i = 1,
             num = $(this).data('num'),
             step = 1000 * time / num,
