@@ -467,15 +467,6 @@ footer {
     header nav {
         display: none;
     }
-    main .present .left__bar_burger {
-        
-    }
-    // .nav__burger {
-    //     display: flex;
-        
-    // }
-    
-
 }
 // данные стили написаны для страницы Delivery
 
@@ -493,22 +484,21 @@ header {
         }
     }
 }
+
 main {
-    //section present
-    .present__position {
-        position: absolute;
-    }
     .present__delivery {
         height: 0;
         margin-bottom: 0;
     }
-
     .left__bar_position {
         top: 0;
     }
 
     //section dishes
     .dishes {
+        .present__position {
+            height: 0;
+        }
         .content__delivery {
             display: block;
             margin-left: 0;
@@ -567,6 +557,33 @@ footer {
     }
 }
 
+//стили для страницы cardFood
+main {
+        //section dishes
+    .dishes {
+        margin-bottom: 0;
+    }
+
+    //section dish__card
+    .dish__card {
+    .dish__card_wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 135px;
+    }
+    .card__info {
+        width: 305px;
+        h3 {
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+        hr {
+            margin-bottom: 35px;
+        }
+    }
+    }
+
+}
 
 
 @import "bootstrap/bootstrap.scss";

@@ -426,15 +426,15 @@ header .nav__delivery a {
   margin-right: 30px;
 }
 
-main .present__position {
-  position: absolute;
-}
 main .present__delivery {
   height: 0;
   margin-bottom: 0;
 }
 main .left__bar_position {
   top: 0;
+}
+main .dishes .present__position {
+  height: 0;
 }
 main .dishes .content__delivery {
   display: block;
@@ -488,6 +488,25 @@ main .dishes .btn__color {
 footer .footer__inner div {
   display: flex;
   gap: 30px;
+}
+
+main .dishes {
+  margin-bottom: 0;
+}
+main .dish__card .dish__card_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+}
+main .dish__card .card__info {
+  width: 305px;
+}
+main .dish__card .card__info h3, main .dish__card .card__info .h3 {
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+main .dish__card .card__info hr {
+  margin-bottom: 35px;
 }
 
 /*!
