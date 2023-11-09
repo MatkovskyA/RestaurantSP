@@ -38,6 +38,13 @@ section {
     gap: 135px;
     margin-left: 220px;
 }
+.bcground {
+    color: white;
+    background-color: #B59571;
+    margin-right: 30px;
+    padding: 15px 30px;
+    border: none;
+}
 .content h2 {
     font-size: 64px;
 font-style: normal;
@@ -60,6 +67,9 @@ max-width: 525px;
     color: white;
     padding: 20px 40px;
     background-color: #B59571;
+}
+.price {
+    font-size: 32px;
 }
 
 //модальное окно резерва стола
@@ -345,11 +355,6 @@ main {
             line-height: 28px;
             padding: 15px 30px;
         }
-        .bcground {
-            color: white;
-            background-color: #B59571;
-            margin-right: 30px;
-        }
         .bcground2 {
             color: black;
             border: 1px solid rgba(51, 51, 51, 0.20);
@@ -379,42 +384,12 @@ main {
         .initial__number {
             font-size: 64px;
             opacity: 0;
+            color: #B59571;
         }
-
-        // .initial__number {
-        //     opacity: 0;
-        // }
-        // .time__route {
-        //     // position: relative;
-        //     max-width: 35%;
-        // }
-        // .bl {
-        //     margin: 16px;
-        //     padding: 30px 10px;
-        // }
-        
-        // .number {
-        //     font-size: 30px;
-        //     font-weight: bold;
-        //     opacity: 0;
-        // }
-        
         .viz {
             opacity: 1;
             transition: 1s;
         }
-        
-        // .clearfix:before,
-        // .clearfix:after {
-        //     content: " ";
-        //     /* 1 */
-        //     display: table;
-        //     /* 2 */
-        // }
-        
-        // .clearfix:after {
-        //     clear: both;
-        // }
 
         .map {
             position: relative;
@@ -468,7 +443,7 @@ footer {
         display: none;
     }
 }
-// данные стили написаны для страницы Delivery
+// данные стили написаны для страницы Delivery-------------
 
 header {
     .color-a {
@@ -522,9 +497,6 @@ main {
             img {
                 width: 100%;
             }
-            .price {
-                font-size: 32px;
-            }
         }
         .dishes__dish {
             margin-bottom: 20px;
@@ -557,15 +529,16 @@ footer {
     }
 }
 
-//стили для страницы cardFood
+//стили для страницы cardFood ---------------------------
 main {
-        //section dishes
-    .dishes {
+    .section__mb {
         margin-bottom: 0;
     }
 
     //section dish__card
+
     .dish__card {
+        font-weight: bold;
     .dish__card_wrapper {
         display: flex;
         justify-content: center;
@@ -580,9 +553,26 @@ main {
         hr {
             margin-bottom: 35px;
         }
+        .text__opacity {
+            font-size: 16px;
+            opacity: 0.5;
+        }
+        input[type=checkbox] {
+            float: right;
+            width: 25px;
+            height: 25px;
+            margin-top: 10px;
+            opacity: 0.5;
+        }
+        .form__weight {
+            width: 60px;
+            height: 55px;
+            display: inline-block;
+            border-radius: 0;
+            margin-right: 20px;
+        }
     }
     }
-
 }
 
 

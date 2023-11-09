@@ -1,5 +1,4 @@
 // отсчет времени в пути до ресторана в блоке контакты
-
 let time = 2;
 let cc = 1;
 
@@ -48,7 +47,8 @@ $('.close__popup').click(function(){
 const leftBar = document.getElementById('left-bar');
 const burgerBtn = document.getElementById('burger-btn');
 const burgerNav = document.getElementById('burger-nav');
-const socialIcons = document.getElementById('social-icons')
+const socialIcons = document.getElementById('social-icons');
+const bodyNoScroll = document.body;
 // document.addEventListener('DOMContentLoaded', function(){
 //     leftBar.addEventListener('click', function () {
         
@@ -59,7 +59,7 @@ burgerBtn.addEventListener('click', function () {
     leftBar.classList.toggle('open');
     burgerNav.classList.toggle('hidden2');
     socialIcons.classList.toggle('soc__icons_row');
-    burgerBtn.classList.toggle('lb__burger_mb')
-
+    burgerBtn.classList.toggle('lb__burger_mb');
+    bodyNoScroll.classList.toggle('no__scroll');
 })
 
