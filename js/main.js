@@ -7,7 +7,7 @@ $('#counter').each(function() {
     let
     cPos = $(this).offset().top,
     topWindow = $(window).scrollTop();
-    if (cPos < topWindow + 400) {
+    if (cPos < topWindow + 1000) {
     if (cc < 2) {
         $(".initial__number").addClass("viz");
         $('div').each(function() {
@@ -66,20 +66,28 @@ burgerBtn.addEventListener('click', function () {
 // табы с меню в странице delivery ---------------
 // получаем все табы-кнопки
 const tabsBtn = document.querySelectorAll('.tabs-menu-btn');
+//все блоки с меню
+const dishBlock = document.querySelectorAll('.menu-dish');
 // проходим по коллекции кнопок и вешаем обработчик события click
 tabsBtn.forEach(function(item){
     item.addEventListener('click', function(){
         //загоняем текущую кнопку в переменную currentBtn
         let currentBtn = item;
         //получаем атрибут по выбранной кнопке
-        let tabIdAtt = currentBtn.getAttribute('data-tab')
-
-        console.log(tabIdAtt);
+        let tabIdAtt = currentBtn.getAttribute('data-tab');
+        // в переменную задаем таб. который мы хотим показывать
+        let currentTab = document.querySelector(tabIdAtt);
         //перезаписываем класс active, если он где-то есть
+        
         tabsBtn.forEach(function(item){
+            item.classList.remove('active');
+        });
+
+        dishBlock.forEach(function(item){
             item.classList.remove('active');
         });
         //добавляем текущей кнопке класс active
         currentBtn.classList.add('active');
+        currentTab.classList.add('active');
     })
 })
