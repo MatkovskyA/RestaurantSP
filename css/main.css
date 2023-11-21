@@ -157,7 +157,7 @@ header nav {
   z-index: 5;
   display: flex;
   justify-content: end;
-  margin: 40px 60px 0 0;
+  margin-top: 40px;
   gap: 50px;
   right: 0;
   align-items: center;
@@ -426,9 +426,10 @@ header .color-a {
   color: #333333;
 }
 header .nav__delivery {
-  position: static;
+  position: absolute;
   display: block;
   float: right;
+  margin-right: 60px;
 }
 header .nav__delivery a {
   margin-right: 30px;
@@ -441,24 +442,40 @@ main .present__delivery {
 main .left__bar_position {
   top: 0;
 }
+main .active-list {
+  display: block;
+}
+main .list-hidden {
+  display: none;
+}
+main .dishes .tabs-menu-btn.active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #B59571;
+}
 main .dishes .present__position {
   height: 0;
 }
-main .dishes .content__delivery {
-  display: block;
-  margin-left: 0;
+main .dishes .dishes-tabs {
+  margin-left: 50px;
+  display: flex;
   padding-top: 115px;
   margin-bottom: 60px;
-  margin-left: 80px;
+  justify-content: space-around;
 }
-main .dishes .list-group-item {
+main .dishes .tabs-menu-btn {
+  background-color: white;
   border: none;
   font-size: 14px;
 }
-main .dishes .row {
+main .dishes .menu-dish {
   justify-content: center;
   gap: 20px;
-  margin-left: 50px;
+  margin-left: 80px;
+  display: none;
+  flex-wrap: wrap;
+}
+main .dishes .menu-dish.active {
+  display: flex;
 }
 main .dishes .dish__block {
   border: 1px solid gray;

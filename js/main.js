@@ -63,3 +63,23 @@ burgerBtn.addEventListener('click', function () {
     bodyNoScroll.classList.toggle('no__scroll');
 })
 
+// табы с меню в странице delivery ---------------
+// получаем все табы-кнопки
+const tabsBtn = document.querySelectorAll('.tabs-menu-btn');
+// проходим по коллекции кнопок и вешаем обработчик события click
+tabsBtn.forEach(function(item){
+    item.addEventListener('click', function(){
+        //загоняем текущую кнопку в переменную currentBtn
+        let currentBtn = item;
+        //получаем атрибут по выбранной кнопке
+        let tabIdAtt = currentBtn.getAttribute('data-tab')
+
+        console.log(tabIdAtt);
+        //перезаписываем класс active, если он где-то есть
+        tabsBtn.forEach(function(item){
+            item.classList.remove('active');
+        });
+        //добавляем текущей кнопке класс active
+        currentBtn.classList.add('active');
+    })
+})
