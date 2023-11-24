@@ -104,10 +104,6 @@ section {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.hidden .card.bgcolor {
-  background-color: #333333;
-  color: white;
-}
 .hidden .bgcolor {
   background-color: #333333;
   color: white;
@@ -166,6 +162,10 @@ header a {
   text-decoration: none;
   line-height: 22px;
   font-size: 16px;
+  color: white;
+}
+header a:hover {
+  opacity: 0.6;
   color: white;
 }
 
@@ -292,7 +292,7 @@ main .present h1, main .present .h1 {
   font-style: normal;
   font-weight: 700;
   line-height: 140%;
-  margin-left: 70px;
+  margin-left: 80px;
 }
 main .menu .content {
   margin-bottom: 120px;
@@ -387,8 +387,6 @@ main .contacts .contacts__info {
   z-index: 5;
   top: 30px;
   left: -110px;
-  width: 416px;
-  height: 349px;
   padding: 40px;
   color: white;
   background-color: #5B5B5B;
@@ -396,7 +394,12 @@ main .contacts .contacts__info {
 main .contacts .contacts__info a {
   display: inline-block;
   color: white;
-  margin: 10px;
+  margin: 5px;
+  text-decoration: none;
+}
+main .contacts .contacts__info .a-border {
+  border: 1px solid white;
+  padding: 10px 20px;
 }
 
 footer {
@@ -417,11 +420,6 @@ footer .footer__inner a {
   color: white;
 }
 
-@media (max-width: 992px) {
-  header nav {
-    display: none;
-  }
-}
 header .color-a {
   color: #333333;
 }
@@ -480,7 +478,7 @@ main .dishes .menu-dish.active {
 main .dishes .dish__block {
   border: 1px solid gray;
   padding: 0;
-  max-width: 250px;
+  width: 250px;
 }
 main .dishes .dish__block img {
   width: 100%;
@@ -10310,5 +10308,237 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+@media (max-width: 1200px) {
+  main section {
+    margin-bottom: 100px;
+  }
+  main .content {
+    margin-left: 60px;
+    justify-content: space-around;
+    gap: 50px;
+  }
+  main .present h1, main .present .h1 {
+    font-size: 44px;
+  }
+  main .contacts iframe {
+    max-width: 450px;
+  }
+}
+@media (max-width: 1024px) {
+  main section {
+    margin-bottom: 80px;
+  }
+  main .content p {
+    max-width: 300px;
+  }
+  main .content div a {
+    display: inline-block;
+    text-align: center;
+  }
+  main .present h1, main .present .h1 {
+    font-size: 38px;
+    margin-left: 100px;
+  }
+  main .menu .food__drinks {
+    gap: 50px;
+  }
+  main .menu .food__drinks .drinks::before, main .menu .food__drinks .food::before {
+    display: none;
+  }
+  main .contacts iframe {
+    max-width: 350px;
+  }
+  main .contacts .contacts__info {
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  main .content {
+    margin-left: 10px;
+  }
+  main .content h2, main .content .h2 {
+    font-size: 42px;
+  }
+  main .menu .food__drinks {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .menu .food__drinks .food, main .menu .food__drinks .drinks {
+    text-align: center;
+  }
+  main .menu .food__drinks img {
+    width: 400px;
+  }
+  main .menu .food__drinks .drinks::before, main .menu .food__drinks .food::before {
+    display: none;
+  }
+  main .menu .line2::after {
+    left: 40vh;
+  }
+  main .contacts .contacts__inner {
+    flex-direction: column;
+    gap: 60px;
+  }
+  main .contacts iframe {
+    display: none;
+  }
+  main .contacts .contacts__info {
+    position: static;
+  }
+  main .contacts .time__route {
+    padding-top: 0;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .hidden .card-body .inputWeight {
+    width: 260px;
+  }
+  .hidden form div {
+    gap: 0;
+  }
+  .hidden .card-header .logo__popup {
+    margin: 60px;
+  }
+  main .present {
+    height: 600px;
+  }
+  main .present .bg__image_title {
+    top: 300px;
+  }
+  main .present .bg__image img {
+    height: 600px;
+  }
+  main .present h1, main .present .h1 {
+    margin-left: 20px;
+    font-size: 32px;
+  }
+  main .present .left__bar {
+    width: 100%;
+    height: 80px;
+    flex-direction: row;
+  }
+  main .present .left__bar .left__bar_logo {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  main .present .left__bar .left__bar_logo .nav__burger a {
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+  main .present .left__bar .left__bar_logo .nav__burger a:nth-child(4) {
+    align-items: center;
+  }
+  main .present .left__bar .left__bar_logo a img {
+    width: 60px;
+  }
+  main .present .left__bar .left__bar_logo.show {
+    flex-direction: column;
+  }
+  main .present .left__bar .soc__icons {
+    margin-top: 0;
+    flex-direction: row;
+  }
+  main .present .left__bar .soc__icons a img {
+    width: 30px;
+    height: 30px;
+  }
+  main .present .left__bar_burger {
+    margin: 0 20px;
+  }
+  main .present .open {
+    height: 100%;
+  }
+  main .present .left__bar.open .lb__burger_mb {
+    margin-bottom: 60px;
+  }
+  main .title {
+    margin-bottom: 40px;
+  }
+  main .content {
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: 70px;
+  }
+  main .content p {
+    max-width: 100%;
+  }
+  main .menu .food__drinks img {
+    max-width: 290px;
+  }
+  main .menu .food__drinks .food {
+    text-align: start;
+  }
+  main .menu .food__drinks .drinks {
+    text-align: start;
+  }
+  main .menu .line2::after {
+    left: 220px;
+  }
+  footer {
+    height: 100%;
+  }
+  footer .footer__inner {
+    text-align: center;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  footer .footer__inner a {
+    font-size: 12px;
+  }
+  footer .footer__inner a img {
+    width: 60px;
+  }
+  footer .footer__inner a:last-child {
+    font-size: 8px;
+    border: 1px solid white;
+    padding: 3px;
+  }
+}
+@media (max-width: 1200px) {
+  header .nav__delivery {
+    margin-right: 0;
+  }
+  main .dishes .dishes-tabs {
+    margin-left: 80px;
+  }
+  main .dishes .dishes-tabs .dishes-tabs-menu {
+    text-align: center;
+  }
+  footer .footer__inner a:last-child {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  main .dishes .tabs-menu-btn.active {
+    padding-bottom: 2px;
+  }
+}
+@media (max-width: 767px) {
+  main .dishes .dish__block {
+    width: 200px;
+  }
+  footer .footer__inner div {
+    gap: 5px;
+  }
+  footer .footer__inner div img {
+    width: 20px;
+  }
+}
+@media (max-width: 641px) {
+  header .nav__delivery {
+    margin-top: 90px;
+  }
+  main .dishes .dishes-tabs {
+    margin-left: 0;
+    padding-top: 125px;
+  }
+  main .dishes .menu-dish {
+    margin-left: 0;
+  }
+  .present__height {
+    position: absolute;
   }
 }/*# sourceMappingURL=main.css.map */

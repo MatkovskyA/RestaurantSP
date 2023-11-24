@@ -48,6 +48,7 @@ const leftBar = document.getElementById('left-bar');
 const burgerBtn = document.getElementById('burger-btn');
 const burgerNav = document.getElementById('burger-nav');
 const socialIcons = document.getElementById('social-icons');
+const barOpened = document.querySelector('.left__bar_logo');
 const bodyNoScroll = document.body;
 // document.addEventListener('DOMContentLoaded', function(){
 //     leftBar.addEventListener('click', function () {
@@ -61,6 +62,7 @@ burgerBtn.addEventListener('click', function () {
     socialIcons.classList.toggle('soc__icons_row');
     burgerBtn.classList.toggle('lb__burger_mb');
     bodyNoScroll.classList.toggle('no__scroll');
+    barOpened.classList.toggle('show');
 })
 
 // табы с меню в странице delivery ---------------
