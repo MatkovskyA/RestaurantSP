@@ -105,7 +105,7 @@ $(document).ready(function () {
         asNavFor: '.card__img_slider-nav',
         draggable: false,
         swipe: false,
-    });
+    })
 
     $('.card__img_slider-nav').slick({
         infinity: false,
