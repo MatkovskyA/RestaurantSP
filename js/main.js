@@ -93,3 +93,27 @@ tabsBtn.forEach(function(item){
         currentTab.classList.add('active');
     })
 })
+
+// слайдер в карточке товара
+$(document).ready(function () {
+    $('.card__img_slider').slick({
+        infinity: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.card__img_slider-nav',
+        draggable: false,
+        swipe: false,
+    });
+
+    $('.card__img_slider-nav').slick({
+        infinity: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.card__img_slider',
+        arrows: false,
+        focusOnSelect: true,
+        draggable: false,
+    })
+});

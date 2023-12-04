@@ -371,25 +371,58 @@
         }
         }
     }
-    // .present__height {
-    //     height: 0;
-    // }
 
 }
 // медиа-запросы под  cardFood.html ******************************
-
-// @media (max-width: 1200px) {
-//     .dish__card {
-
-//     }
-// }
+@media (max-width: 1200px) {
+    main .dish__card .dish__card_wrapper {
+        gap: 50px;
+        .card__img_slider {
+            max-width: 350px;
+            img {
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+        .card__img_slider-nav {
+            max-width: 350px;
+            img {
+                box-sizing: border-box;
+                width: 92%;
+                margin: 20px auto;
+            }
+        }
+        .card__img {
+            margin-left: 50px;
+            img {
+                max-width: 220px;
+            }
+        }
+    }
+}
 
 @media (max-width: 1024px) {
     main .dish__card .dish__card_wrapper {
-        gap: 70px;
-        .card__img {
+        gap: 40px;
+        .card__img_slider {
+            max-width: 250px;
             img {
-                max-width: 250px;
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+        .card__img_slider-nav {
+            max-width: 250px;
+            img {
+                box-sizing: border-box;
+                width: 92%;
+                margin: 20px auto;
+            }
+        }
+        .card__img {
+            margin-left: 50px;
+            img {
+                max-width: 220px;
             }
         }
     }
@@ -399,13 +432,55 @@
     main .dish__card .dish__card_wrapper {
         flex-direction: column;
         align-items: center;
+        margin-left: 50px;
     }
 }
 
-// @media (max-width: 641px) {
-//     footer .footer__inner {
-//     div {
-//         display: none;
-//     }
-// }
-// }
+@media (max-width: 641px) {
+    main .dish__card {
+    .card__info input[type=checkbox] {
+        margin-right: 20px;
+    }
+    .dish__card_wrapper {
+        margin-left: 0;
+        .card__img{
+            margin-left: 0;
+        img {
+            max-width: 250px;
+        }
+
+    }
+}
+}
+}
+
+@media (max-width: 440px) {
+    main .dish__card .dish__card_wrapper {
+        .card__img_slider {
+            max-width: 280px;
+            img {
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+        .card__img_slider-nav {
+            max-width: 280px;
+            img {
+                box-sizing: border-box;
+                width: 92%;
+                margin: 20px auto;
+            }
+        }
+    }
+    footer {
+        .footer__inner {
+        a:nth-child(3n){
+            display: none;
+        }
+        
+        div {
+            display: none;
+        }
+    }
+    }
+}

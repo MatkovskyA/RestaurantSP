@@ -1,11 +1,5 @@
 @import 'variable.scss';
-
-@font-face { 
-    font-family: "CirceBold";
-    src:url("/fonts/CirceBold/CirceBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
-}
+@import "slick.scss";
 
 // Данные стили написаны для основной страницы
 a {
@@ -574,6 +568,21 @@ main {
         display: flex;
         justify-content: center;
         gap: 135px;
+    }
+    .card__img_slider {
+        max-width: 416px;
+        img {
+            box-sizing: border-box;
+            width: 100%;
+        }
+    }
+    .card__img_slider-nav {
+        max-width: 416px;
+        img {
+            box-sizing: border-box;
+            width: 92%;
+            margin: 20px auto;
+        }
     }
     .card__info {
         width: 305px;
