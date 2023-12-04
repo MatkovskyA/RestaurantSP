@@ -491,11 +491,14 @@ main {
         }
         .dishes-tabs {
             margin-left: 50px;
-            display: flex;
             padding-top: 115px;
             margin-bottom: 60px;
-            justify-content: space-around;
-            
+        }
+        .dishes-tabs-menu {
+            display: flex;
+            justify-content: center;
+            column-gap: 30px;
+            flex-wrap: wrap;
         }
         .tabs-menu-btn {
             background-color: white;

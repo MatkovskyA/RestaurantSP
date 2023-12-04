@@ -279,9 +279,6 @@
         .dishes{
             .dishes-tabs {
                 margin-left: 80px;
-                .dishes-tabs-menu {
-                    text-align: center;
-                }
             }
             
         }
@@ -403,26 +400,21 @@
 
 @media (max-width: 1024px) {
     main .dish__card .dish__card_wrapper {
-        gap: 40px;
+        margin-left: 40px;
+        gap: 20px;
         .card__img_slider {
-            max-width: 250px;
+            max-width: 230px;
             img {
                 box-sizing: border-box;
                 width: 100%;
             }
         }
         .card__img_slider-nav {
-            max-width: 250px;
+            max-width: 230px;
             img {
                 box-sizing: border-box;
                 width: 92%;
                 margin: 20px auto;
-            }
-        }
-        .card__img {
-            margin-left: 50px;
-            img {
-                max-width: 220px;
             }
         }
     }
@@ -443,16 +435,10 @@
     }
     .dish__card_wrapper {
         margin-left: 0;
-        .card__img{
-            margin-left: 0;
-        img {
-            max-width: 250px;
-        }
-
     }
 }
 }
-}
+
 
 @media (max-width: 440px) {
     main .dish__card .dish__card_wrapper {
