@@ -74,6 +74,10 @@ max-width: 525px;
 .price {
     font-size: 32px;
 }
+//Как вариант валюте из юникода
+// .price:after {
+//     content: "\20BD";
+// }
 
 //модальное окно резерва стола
 .hidden {
@@ -503,6 +507,8 @@ main {
             background-color: white;
             border: none;
             font-size: 14px;
+            text-decoration: none;
+            color: black;
         }
 
         .menu-dish {

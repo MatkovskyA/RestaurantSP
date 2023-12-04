@@ -464,6 +464,8 @@ main .dishes .tabs-menu-btn {
   background-color: white;
   border: none;
   font-size: 14px;
+  text-decoration: none;
+  color: black;
 }
 main .dishes .menu-dish {
   justify-content: center;
@@ -10415,6 +10417,9 @@ textarea.form-control-lg {
   .hidden .card-header .logo__popup {
     margin: 60px;
   }
+  main .present.present__delivery {
+    height: 0;
+  }
   main .present {
     height: 600px;
   }
@@ -10555,6 +10560,10 @@ textarea.form-control-lg {
   header .nav__delivery {
     margin-top: 90px;
   }
+  main .dishes {
+    z-index: 2;
+    position: relative;
+  }
   main .dishes .dishes-tabs {
     margin-left: 0;
     padding-top: 125px;
@@ -10581,7 +10590,18 @@ textarea.form-control-lg {
   main .dishes .dish__items button {
     font-size: 12px;
   }
-  .present__height {
-    position: absolute;
+}
+@media (max-width: 1024px) {
+  main .dish__card .dish__card_wrapper {
+    gap: 70px;
+  }
+  main .dish__card .dish__card_wrapper .card__img img {
+    max-width: 250px;
+  }
+}
+@media (max-width: 767px) {
+  main .dish__card .dish__card_wrapper {
+    flex-direction: column;
+    align-items: center;
   }
 }/*# sourceMappingURL=main.css.map */
