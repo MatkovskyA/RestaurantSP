@@ -26,7 +26,11 @@
 }
 
 @media  (max-width: 1024px) {
-    
+    header {
+        nav  {
+            gap: 30px;
+        }
+    }
     main {
         section {
             margin-bottom: 80px;
@@ -81,7 +85,18 @@
                 font-size: 42px;
             }
         }
-    
+    //section present
+    .present {
+        .left__bar.open { 
+            .lb__burger_mb {
+                margin-bottom: 50px;
+            }
+        }
+        .left__bar .left__bar_logo .nav__burger a {
+            font-size: 38px;
+            margin-bottom: 30px;
+        }
+    }
     //section menu
     .menu {
         .food__drinks {
@@ -124,7 +139,11 @@
 }
 
 @media  (max-width: 640px) {
-
+    header {
+        .nav__main {
+            display: none;
+        }
+    }
         .hidden {
         .card-body .inputWeight {
             width: 260px;
@@ -141,7 +160,7 @@
 
         //section present
         .present {
-            height: 600px;
+        height: 600px;
             .bg__image_title {
                 top: 300px;
             }
@@ -286,6 +305,17 @@
             .dish__block {
                 width: 200px;
             }
+            .dish__items {
+                gap: 5px;
+                margin-bottom: 10px;
+                .price {
+                    font-size: 24px;
+                }
+                button {
+                    padding: 10px;
+                    border-radius: 3px;
+                }
+            }
         }
     }
     footer {
@@ -313,7 +343,26 @@
             .menu-dish {
             margin-left: 0;
         }
-            
+        .dish__block {
+            width: 130px;
+            .dishes__dish {
+                margin-bottom: 5px;
+            }
+            .text__center {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+        }
+        .dish__items {
+            padding: 0 5px;
+            .price {
+                font-size: 16px;
+            }
+            button {
+                font-size: 12px;
+                
+            }
+        }
         }
     }
     .present__height {

@@ -10327,6 +10327,9 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 1024px) {
+  header nav {
+    gap: 30px;
+  }
   main section {
     margin-bottom: 80px;
   }
@@ -10361,6 +10364,13 @@ textarea.form-control-lg {
   main .content h2, main .content .h2 {
     font-size: 42px;
   }
+  main .present .left__bar.open .lb__burger_mb {
+    margin-bottom: 50px;
+  }
+  main .present .left__bar .left__bar_logo .nav__burger a {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
   main .menu .food__drinks {
     flex-direction: column;
     justify-content: center;
@@ -10393,6 +10403,9 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 640px) {
+  header .nav__main {
+    display: none;
+  }
   .hidden .card-body .inputWeight {
     width: 260px;
   }
@@ -10520,6 +10533,17 @@ textarea.form-control-lg {
   main .dishes .dish__block {
     width: 200px;
   }
+  main .dishes .dish__items {
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  main .dishes .dish__items .price {
+    font-size: 24px;
+  }
+  main .dishes .dish__items button {
+    padding: 10px;
+    border-radius: 3px;
+  }
   footer .footer__inner div {
     gap: 5px;
   }
@@ -10537,6 +10561,25 @@ textarea.form-control-lg {
   }
   main .dishes .menu-dish {
     margin-left: 0;
+  }
+  main .dishes .dish__block {
+    width: 130px;
+  }
+  main .dishes .dish__block .dishes__dish {
+    margin-bottom: 5px;
+  }
+  main .dishes .dish__block .text__center {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  main .dishes .dish__items {
+    padding: 0 5px;
+  }
+  main .dishes .dish__items .price {
+    font-size: 16px;
+  }
+  main .dishes .dish__items button {
+    font-size: 12px;
   }
   .present__height {
     position: absolute;

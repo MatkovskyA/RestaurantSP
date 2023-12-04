@@ -35,12 +35,12 @@ $('#counter').each(function() {
 //ОТкрытие popup
 $('.open__popup').click(function(){
     $('.hidden').fadeIn(600);
-    $('html').addClass('no__scroll')
+    // $('html').addClass('no__scroll')
 });
 //Закрытие попап
 $('.close__popup').click(function(){
     $('.hidden').fadeOut(600);
-    $('html').removeClass('no__scroll')
+    // $('html').removeClass('no__scroll')
 });
 
 //burger-menu
@@ -61,7 +61,7 @@ burgerBtn.addEventListener('click', function () {
     burgerNav.classList.toggle('hidden2');
     socialIcons.classList.toggle('soc__icons_row');
     burgerBtn.classList.toggle('lb__burger_mb');
-    bodyNoScroll.classList.toggle('no__scroll');
+    // bodyNoScroll.classList.toggle('no__scroll');
     barOpened.classList.toggle('show');
 })
 
