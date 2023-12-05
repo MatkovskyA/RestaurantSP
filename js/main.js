@@ -117,3 +117,21 @@ $(document).ready(function () {
         draggable: false,
     })
 });
+
+// модальное окно "задать вопрос"
+
+document.getElementById('get-question-btn').addEventListener('click', (event) => {
+    document.querySelector('.contact__form').style.display = 'block';
+    bodyNoScroll.classList.add('no__scroll');
+    event.preventDefault();
+})
+
+document.querySelector('.close-modal').addEventListener('click', () => {
+    document.querySelector('.contact__form').style.display = 'none';
+});
+
+window.onclick = (event) => {
+    if (event.target === document.querySelector('.contact__form')) {
+        document.querySelector('.contact__form').style.display = 'none';
+    }
+}
