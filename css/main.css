@@ -267,7 +267,6 @@ main .present .left__bar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 2s;
 }
 main .present .left__bar .left__bar_logo {
   margin: 30px 20px;
@@ -484,7 +483,7 @@ main .contacts .contacts__info .a-border {
 main .contacts .contact__form {
   position: fixed;
   display: none;
-  z-index: 5;
+  z-index: 7;
   left: 0;
   top: 0;
   width: 100%;
@@ -578,15 +577,15 @@ main .dishes .present__position {
   height: 0;
 }
 main .dishes .dishes-tabs {
-  margin-left: 50px;
+  margin-left: 100px;
   padding-top: 115px;
   margin-bottom: 60px;
 }
 main .dishes .dishes-tabs-menu {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
   flex-wrap: wrap;
 }
 main .dishes .tabs-menu-btn {
@@ -10531,7 +10530,7 @@ textarea.form-control-lg {
     display: none;
   }
   main .menu .line2::after {
-    left: 40vh;
+    left: 37vh;
   }
   main .contacts .contacts__inner {
     flex-direction: column;
@@ -10814,6 +10813,6 @@ textarea.form-control-lg {
     display: none;
   }
   footer .footer__inner div {
-    display: none;
+    display: block;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -128,10 +128,12 @@ document.getElementById('get-question-btn').addEventListener('click', (event) =>
 
 document.querySelector('.close-modal').addEventListener('click', () => {
     document.querySelector('.contact__form').style.display = 'none';
+    bodyNoScroll.classList.remove('no__scroll');
 });
 
 window.onclick = (event) => {
     if (event.target === document.querySelector('.contact__form')) {
         document.querySelector('.contact__form').style.display = 'none';
+        bodyNoScroll.classList.remove('no__scroll');
     }
 }

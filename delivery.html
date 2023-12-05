@@ -984,12 +984,31 @@
                             <p>Пт-Сб с 12:00 до 03:00</p>
                             <a href="#" class="reserved open__popup">Бронь
                                 столика</a>
-                            <a href="#">Задать вопрос</a>
+                            <a id="get-question-btn" href="#">Задать вопрос</a>
                         </div>
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A7d35783f27ef1f4c04210ca7b2781e993f1b14dce13b65f4282a6e74a5ed690f&amp;source=constructor"
                             width="745" height="400" frameborder="0">
                         </iframe>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <div class="form__wrapper" id="modal-form">
+                        <span class="close-modal">&times;</span>
+                        <form action="#" name="newForm" method="post">
+                            <div class="form__inputs">
+                                <label for="userName">Ваше имя:</label>
+                                <input type="text" name="" id="userName" placeholder="Введите имя" required>
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Укажите ваш email" required>
+                            </div>
+                            <textarea name="" id="" placeholder="Укажите ваш вопрос" required></textarea>
+                            <label for="checkbox">Даю согласие на обработку персональных данных</label>
+                            <input type="checkbox">
+                            <div class="button__block">
+                                <input type="submit" name="" id="" value="Отправить вопрос">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

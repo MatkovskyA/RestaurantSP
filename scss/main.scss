@@ -10,6 +10,7 @@ body {
     font-family: "CirceBold";
     
 }
+
 h4.line::after {
     content: url(../resourses/line.svg);
     position: absolute;
@@ -68,10 +69,6 @@ max-width: 525px;
 .price {
     font-size: 32px;
 }
-//Как вариант валюте из юникода
-// .price:after {
-//     content: "\20BD";
-// }
 
 //модальное окно резерва стола
 .hidden {
@@ -190,7 +187,6 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            transition: transform 2s;
             .left__bar_logo {
                 margin: 30px 20px;
                 display: flex;
@@ -426,7 +422,7 @@ main {
         .contact__form {
             position: fixed;
             display: none;
-            z-index: 5;
+            z-index: 7;
             left: 0;
             top: 0;
             width: 100%;
@@ -534,14 +530,14 @@ main {
             height: 0;
         }
         .dishes-tabs {
-            margin-left: 50px;
+            margin-left: 100px;
             padding-top: 115px;
             margin-bottom: 60px;
         }
         .dishes-tabs-menu {
             display: flex;
             justify-content: center;
-            column-gap: 30px;
+            column-gap: 15px;
             flex-wrap: wrap;
         }
         .tabs-menu-btn {
