@@ -412,7 +412,6 @@ main {
                 color: white;
                 margin: 5px;
                 text-decoration: none;
-                
             }
             .a-border {
                 border: 1px solid white;
@@ -477,6 +476,7 @@ footer {
         justify-content: space-between;
         align-items: center;
         padding: 35px 0;
+        column-gap: 20px;
         
         a {
             text-decoration: none;

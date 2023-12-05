@@ -106,7 +106,7 @@ $(document).ready(function () {
         draggable: false,
         swipe: false,
     })
-
+//миниатюры слайдера(по сути второй слайдер, который связан классами с первым)
     $('.card__img_slider-nav').slick({
         infinity: false,
         slidesToShow: 3,
@@ -119,21 +119,41 @@ $(document).ready(function () {
 });
 
 // модальное окно "задать вопрос"
-
+// по нажатию на кнопку показываем блок
 document.getElementById('get-question-btn').addEventListener('click', (event) => {
     document.querySelector('.contact__form').style.display = 'block';
+    //убираем скролл
     bodyNoScroll.classList.add('no__scroll');
+    // отменяем прокрутку наверх по якорю
     event.preventDefault();
 })
-
+// скрываем модальное окно по нажатию на крестик 
 document.querySelector('.close-modal').addEventListener('click', () => {
     document.querySelector('.contact__form').style.display = 'none';
+    //и перезаписываем скролл окну браузера
     bodyNoScroll.classList.remove('no__scroll');
 });
-
+//при нажатии за пределы области модального окна
 window.onclick = (event) => {
     if (event.target === document.querySelector('.contact__form')) {
+        //скрываем модальное окно
         document.querySelector('.contact__form').style.display = 'none';
+        //проверяем на класс и перезаписываем
         bodyNoScroll.classList.remove('no__scroll');
     }
 }
+
+
+//корзина товаров
+let basket = {
+
+}
+
+
+//добавление товара в корзину
+
+//умньшение кол-ва товара в корзине
+
+// удаление товара из корзины 
+
+//

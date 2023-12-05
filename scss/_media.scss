@@ -253,7 +253,7 @@
             padding: 20px 0;
             gap: 10px;
             a {
-                font-size: 12px;
+                font-size: 8px;
                 img {
                     width: 60px;
                 }
@@ -282,13 +282,6 @@
             }
             
         }
-    }
-    footer {
-        .footer__inner{
-            a:last-child {
-                display: none;
-            }
-        } 
     }
 }
 @media (max-width: 1024px){
@@ -460,12 +453,8 @@
     }
     footer {
         .footer__inner {
-        a:nth-child(3n){
-            display: none;
-        }
-        
         div {
-            display: block;
+            display: none;
         }
     }
     }
