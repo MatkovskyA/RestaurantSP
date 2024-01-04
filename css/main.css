@@ -10558,7 +10558,7 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 640px) {
-  header .nav__main {
+  header nav {
     display: none;
   }
   .hidden .card-body .inputWeight {
