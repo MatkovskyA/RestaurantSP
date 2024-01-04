@@ -546,7 +546,7 @@ main .contacts .form__wrapper {
   max-width: 450px;
   margin: 10% auto;
   text-align: center;
-  background-color: gray;
+  background-color: rgb(79, 79, 79);
 }
 main .contacts .form__wrapper input, main .contacts .form__wrapper textarea {
   display: block;
@@ -562,7 +562,6 @@ main .contacts .form__wrapper input[type=submit] {
   color: white;
   background-color: darkgray;
   padding: 10px;
-  box-shadow: 5px 5px 20px white;
   border-radius: 5px;
 }
 main .contacts .form__wrapper .close-modal {
@@ -670,7 +669,7 @@ main .dishes .dish__block img {
 main .dishes .dishes__dish {
   margin-bottom: 20px;
 }
-main .dishes .dish__items {
+main .dishes .price__items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -721,7 +720,11 @@ main .dish__card .card__info h3, main .dish__card .card__info .h3 {
   font-size: 32px;
   margin-bottom: 35px;
 }
-main .dish__card .card__info hr {
+main .dish__card .card__info .card__info_line {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #8c8c8c;
+  height: 2px;
   margin-bottom: 35px;
 }
 main .dish__card .card__info .text__opacity {
@@ -10723,14 +10726,14 @@ textarea.form-control-lg {
   main .dishes .dish__block {
     width: 200px;
   }
-  main .dishes .dish__items {
+  main .dishes .price__items {
     gap: 5px;
     margin-bottom: 10px;
   }
-  main .dishes .dish__items .price {
+  main .dishes .price__items .price {
     font-size: 24px;
   }
-  main .dishes .dish__items button {
+  main .dishes .price__items button {
     padding: 10px;
     border-radius: 3px;
   }
@@ -10766,14 +10769,14 @@ textarea.form-control-lg {
     font-size: 14px;
     margin-bottom: 15px;
   }
-  main .dishes .dish__items {
+  main .dishes .price__items {
     padding: 0 5px;
   }
-  main .dishes .dish__items .price {
-    font-size: 16px;
+  main .dishes .price__items .price {
+    font-size: 14px;
   }
-  main .dishes .dish__items button {
-    font-size: 12px;
+  main .dishes .price__items button {
+    font-size: 10px;
   }
 }
 @media (max-width: 1200px) {

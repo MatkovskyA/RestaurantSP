@@ -137,6 +137,11 @@ window.onclick = (event) => {
 }
 
 
+//Cancel page reload when form is submitted
+document.querySelector('.form-contact').addEventListener('submit', function(e) {
+    e.preventDefault()
+})
+
 
 
 

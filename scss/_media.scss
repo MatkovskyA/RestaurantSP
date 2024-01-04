@@ -299,7 +299,7 @@
             .dish__block {
                 width: 200px;
             }
-            .dish__items {
+            .price__items {
                 gap: 5px;
                 margin-bottom: 10px;
                 .price {
@@ -349,13 +349,13 @@
                 margin-bottom: 15px;
             }
         }
-        .dish__items {
+        .price__items {
             padding: 0 5px;
             .price {
-                font-size: 16px;
+                font-size: 14px;
             }
             button {
-                font-size: 12px;
+                font-size: 10px;
                 
             }
         }
