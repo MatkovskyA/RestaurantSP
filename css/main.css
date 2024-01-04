@@ -231,20 +231,28 @@ header .container {
 header nav {
   position: absolute;
   z-index: 5;
+  margin-top: 40px;
+  right: 0;
+}
+header nav ul {
   display: flex;
   justify-content: end;
-  margin-top: 40px;
-  gap: 50px;
-  right: 0;
-  align-items: center;
+  list-style-type: none;
 }
-header a {
+header nav ul li {
+  margin-right: 50px;
+}
+header nav ul li:last-child {
+  margin-right: 0;
+}
+header nav ul li a {
+  display: inline-block;
   text-decoration: none;
   line-height: 22px;
   font-size: 16px;
   color: white;
 }
-header a:hover {
+header nav ul li a:hover {
   opacity: 0.6;
   color: white;
 }
@@ -10474,8 +10482,8 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 1024px) {
-  header nav {
-    gap: 30px;
+  header nav ul li {
+    margin-right: 30px;
   }
   main section {
     margin-bottom: 80px;

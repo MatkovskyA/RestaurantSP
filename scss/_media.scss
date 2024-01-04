@@ -27,8 +27,8 @@
 
 @media  (max-width: 1024px) {
     header {
-        nav  {
-            gap: 30px;
+        nav ul li  {
+            margin-right: 30px;
         }
     }
     main {
