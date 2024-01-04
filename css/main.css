@@ -101,18 +101,16 @@ body {
   font-family: "CirceBold";
 }
 
-h4.line::after, .line.h4::after {
-  content: url(../resourses/line.svg);
-  position: absolute;
-  top: -5px;
-  left: 150%;
+h4, .h4 {
+  display: inline-block;
+  margin-right: 15px;
 }
 
-.line2::after {
-  content: url(../resourses/line.svg);
-  position: absolute;
-  bottom: 7px;
-  left: 27vh;
+.line {
+  display: inline-block;
+  width: 55px;
+  height: 3px;
+  background-color: #B59571;
 }
 
 section {
@@ -120,9 +118,10 @@ section {
 }
 
 .title {
+  display: flex;
+  align-items: center;
   margin-bottom: 80px;
   position: relative;
-  display: inline-block;
 }
 
 .content {
@@ -432,8 +431,19 @@ main .menu .food__drinks a {
 main .menu .food__drinks .food {
   position: relative;
 }
+main .menu .food__drinks .food div {
+  display: flex;
+  align-items: center;
+}
 main .menu .food__drinks .drinks {
   position: relative;
+}
+main .menu .food__drinks .drinks div {
+  display: flex;
+  align-items: center;
+}
+main .menu .food__drinks h4, main .menu .food__drinks .h4 {
+  display: inline-block;
 }
 main .menu .food__drinks .drinks::before {
   content: url(../resourses/border.svg);
