@@ -35,12 +35,10 @@ $('#counter').each(function() {
 //ОТкрытие popup
 $('.open__popup').click(function(){
     $('.hidden').fadeIn(600);
-    // $('html').addClass('no__scroll')
 });
 //Закрытие попап
 $('.close__popup').click(function(){
     $('.hidden').fadeOut(600);
-    // $('html').removeClass('no__scroll')
 });
 
 //burger-menu
@@ -50,18 +48,13 @@ const burgerNav = document.getElementById('burger-nav');
 const socialIcons = document.getElementById('social-icons');
 const barOpened = document.querySelector('.left__bar_logo');
 const bodyNoScroll = document.body;
-// document.addEventListener('DOMContentLoaded', function(){
-//     leftBar.addEventListener('click', function () {
-        
-//     })
-// })
+
 
 burgerBtn.addEventListener('click', function () {
     leftBar.classList.toggle('open');
     burgerNav.classList.toggle('hidden2');
     socialIcons.classList.toggle('soc__icons_row');
     burgerBtn.classList.toggle('lb__burger_mb');
-    // bodyNoScroll.classList.toggle('no__scroll');
     barOpened.classList.toggle('show');
 })
 

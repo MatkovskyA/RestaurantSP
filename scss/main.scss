@@ -5,6 +5,12 @@
 a {
     cursor: pointer;
 }
+a:hover {
+    opacity: 0.6;
+}
+button:hover {
+    opacity: 0.6;
+}
 
 body {
     font-family: "CirceBold";
@@ -35,6 +41,9 @@ section {
     display: flex;
     gap: 135px;
     margin-left: 220px;
+    div p {
+        margin-left: 20px;
+    }
 }
 .bcground {
     color: white;
@@ -45,6 +54,7 @@ section {
 }
 .content h2 {
     font-size: 64px;
+    max-width: 195px;
 font-style: normal;
 font-weight: 700;
 line-height: 120%;
@@ -69,7 +79,20 @@ max-width: 525px;
 .price {
     font-size: 32px;
 }
-
+.btn__color {
+    padding: 10px 20px;
+    background-color: #B59571;
+    color: white;
+    border: 1px solid white;
+}
+.btn__color:hover {
+    background-color: rgb(255, 255, 255);
+    color: #8d7357;
+    border: 1px solid #B59571;
+}
+.delivery-content-btn {
+    text-align: center;
+}
 //модальное окно резерва стола
 .hidden {
     display: none;
@@ -152,6 +175,7 @@ header {
             display: flex;
             justify-content: end;
             list-style-type: none;
+            align-items: center;
         }
         ul li{
             margin-right: 50px;
@@ -299,7 +323,7 @@ main {
         }
         h1 {
             color: white;
-            max-width: 895px;
+            max-width: 870px;
             font-size: 54px;
             font-style: normal;
             font-weight: 700;
@@ -502,6 +526,10 @@ footer {
 header {
     .color-a {
         color: #333333;
+        text-decoration: none;
+    }
+    .color-a:hover {
+        color: #333333;
     }
 
     .nav__delivery {
@@ -589,12 +617,6 @@ main {
             text-align: center;
             margin-bottom: 30px;
             font-size: 18px;
-        }
-        .btn__color {
-            padding: 10px 20px;
-            background-color: #B59571;
-            color: white;
-            border: none
         }
     }
 }
