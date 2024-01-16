@@ -110,7 +110,7 @@ h4, .h4 {
   display: inline-block;
   width: 55px;
   height: 3px;
-  background-color: #B59571;
+  background-color: #b59571;
 }
 
 section {
@@ -135,7 +135,7 @@ section {
 
 .bcground {
   color: white;
-  background-color: #B59571;
+  background-color: #b59571;
   margin-right: 30px;
   padding: 15px 30px;
   border: none;
@@ -166,7 +166,7 @@ section {
   font-size: 24px;
   color: white;
   padding: 20px 40px;
-  background-color: #B59571;
+  background-color: #b59571;
 }
 
 .price {
@@ -175,7 +175,7 @@ section {
 
 .btn__color {
   padding: 10px 20px;
-  background-color: #B59571;
+  background-color: #b59571;
   color: white;
   border: 1px solid white;
 }
@@ -183,7 +183,7 @@ section {
 .btn__color:hover {
   background-color: rgb(255, 255, 255);
   color: #8d7357;
-  border: 1px solid #B59571;
+  border: 1px solid #b59571;
 }
 
 .delivery-content-btn {
@@ -247,7 +247,7 @@ section {
   width: 150px;
   padding: 10px;
   justify-self: center;
-  background-color: #B59571;
+  background-color: #b59571;
   color: white;
   border: none;
   margin-bottom: 50px;
@@ -288,7 +288,7 @@ header nav ul li a:hover {
 
 .reserved {
   padding: 10px 20px;
-  background-color: #B59571;
+  background-color: #b59571;
 }
 
 main .present {
@@ -330,7 +330,7 @@ main .present .left__bar .left__bar_logo .nav__burger a:nth-child(4) {
   font-size: 24px;
   color: white;
   padding: 20px 40px;
-  background-color: #B59571;
+  background-color: #b59571;
 }
 main .present .open {
   width: 100%;
@@ -361,7 +361,7 @@ main .present .left__bar_burger span {
   position: absolute;
   width: 40px;
   height: 4px;
-  background-color: #B59571;
+  background-color: #b59571;
   left: 3px;
   transition: transform 1s, opacity 0.5s, background-color 0.5s;
 }
@@ -497,7 +497,7 @@ main .contacts .time__block {
 main .contacts .initial__number {
   font-size: 64px;
   opacity: 0;
-  color: #B59571;
+  color: #b59571;
 }
 main .contacts .viz {
   opacity: 1;
@@ -516,7 +516,7 @@ main .contacts .contacts__info {
   left: -110px;
   padding: 40px;
   color: white;
-  background-color: #5B5B5B;
+  background-color: #5b5b5b;
 }
 main .contacts .contacts__info a {
   display: inline-block;
@@ -548,7 +548,8 @@ main .contacts .form__wrapper {
   text-align: center;
   background-color: rgb(79, 79, 79);
 }
-main .contacts .form__wrapper input, main .contacts .form__wrapper textarea {
+main .contacts .form__wrapper input,
+main .contacts .form__wrapper textarea {
   display: block;
   margin: 10px auto;
   min-width: 250px;
@@ -624,7 +625,7 @@ main .list-hidden {
 }
 main .dishes .tabs-menu-btn.active {
   padding-bottom: 5px;
-  border-bottom: 3px solid #B59571;
+  border-bottom: 3px solid #b59571;
 }
 main .dishes .present__position {
   height: 0;
@@ -709,6 +710,7 @@ main .dish__card .card__img_slider-nav {
   max-width: 416px;
 }
 main .dish__card .card__img_slider-nav img {
+  cursor: pointer;
   box-sizing: border-box;
   width: 92%;
   margin: 20px auto;
